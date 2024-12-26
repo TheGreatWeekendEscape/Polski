@@ -66,9 +66,10 @@ public class Main {
 
         Map<String, String> vocabulary = new HashMap<>();
         fillVocabulary(category, vocabulary);
+        int words = vocabulary.size();
 
         //Separacion para no ver las respuestas mientras se juega
-        System.out.println("Press any key to start (" + vocabulary.size() + " words) . . .");
+        System.out.println("Press any key to start (" + words + " words) . . .");
         keyboard.nextLine();
         for (int i = 0; i < 50; i++) {
             System.out.println("* * *");
@@ -99,9 +100,9 @@ public class Main {
             if (mistakes == 0) {
                 System.out.println("You have finished succesfully");
             } else if (mistakes == 1){
-                System.out.println("You only made a mistake. Let's try again.");
+                System.out.println("You only made a mistake (Out of " + words + " words). Let's try again.");
             } else {
-                System.out.println("You made " + mistakes + " mistakes. Let's try those again.");
+                System.out.println("You made " + mistakes + " mistakes (Out of " + words + " words). Let's try those again.");
             }
         } while (mistakes != 0);
 
