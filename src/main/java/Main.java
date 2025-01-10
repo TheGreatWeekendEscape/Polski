@@ -89,8 +89,6 @@ public class Main {
                 if (userGuess.equalsIgnoreCase(polishWord)) {
                     System.out.println("\033[32mCORRECT\033[0m");
                     vocabulary.remove(englishWord);
-                } else if (userGuess.equalsIgnoreCase("exit")){
-                    break;
                 } else {
                     mistakes++;
                     System.out.println("\033[31mWRONG\033[0m (" + polishWord + ")");
