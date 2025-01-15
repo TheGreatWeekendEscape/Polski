@@ -109,7 +109,7 @@ public class Main {
 
     }
 
-    //Si la categoria es all llena el map de forma recursiva
+    //Si la categoria es all se llena de forma recursiva
     private static Map fillVocabulary(String category, Map vocabulary) {
         Scanner keyboard = new Scanner(System.in);
 
