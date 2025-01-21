@@ -45,7 +45,7 @@ public class Main {
                 }
             }
             if (!validOption) {
-                System.out.println("Please select a valid option [1-" + categories.length + "]: ");
+                System.out.println("Please select a valid option [1-" + (categories.length + 2) + "]: ");
             }
         }
 
