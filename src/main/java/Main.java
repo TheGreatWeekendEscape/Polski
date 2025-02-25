@@ -78,12 +78,14 @@ public class Main {
         int mistakes;
 
         do {
+            int index = 1;
             mistakes = 0;
             List<String> englishWords = new ArrayList<>(vocabulary.keySet());
             Collections.shuffle(englishWords);
 
             for (String englishWord : englishWords) {
-                System.out.print(englishWord + " : ");
+                System.out.print(index + ".- " + englishWord + " : ");
+                index++;
                 String userGuess = keyboard.nextLine();
                 String polishWord = vocabulary.get(englishWord);
                 if (userGuess.equalsIgnoreCase(polishWord)) {

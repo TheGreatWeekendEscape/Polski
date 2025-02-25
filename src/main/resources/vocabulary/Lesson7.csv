@@ -6,7 +6,7 @@ Expensive,Drogi
 Cheap,Tani
 Rich,Bogaty
 Poor,Biedny
-Cost,Kosztować
+To cost,Kosztować
 To pay,Płacić
 To recommend,Polecać
 Money,Pieniądze
@@ -30,3 +30,7 @@ Pharmacy,Apteka
 Bank,Bank
 Travel agency,Biuro podróży
 Bakery,Piekarnia
+Adjetive,Przymiotnik
+Exactly,Dokładnie
+To take (Imperfective),Brać
+To take (Perfective),Wziąć
