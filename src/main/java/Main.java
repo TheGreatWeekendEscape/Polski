@@ -88,7 +88,7 @@ public class Main {
                 index++;
                 String userGuess = keyboard.nextLine();
                 String polishWord = vocabulary.get(englishWord);
-                if (userGuess.equalsIgnoreCase(polishWord)) {
+                if (userGuess.trim().equalsIgnoreCase(polishWord)) {
                     System.out.println("\033[32mCORRECT\033[0m");
                     vocabulary.remove(englishWord);
                 } else {
